@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import Scrollbar, RIGHT, LEFT,WORD
 import requests
 
 
@@ -60,10 +61,10 @@ class App(tk.Frame):
         self.status_box.place(x=610, y=265)
 
         ##text box 1
-        self.text_box = tk.Text(root,height=20,width=75)
+        self.text_box = tk.Text(root,height=20,width=75,wrap=WORD)
         self.text_box.place(x=15, y=295)
         #scroll text
-        self.text_box2 = tk.Text(root,height=20,width=75)
+        self.text_box2 = tk.Text(root,height=20,width=75,wrap=WORD)
         self.text_box2.place(x=650, y=295)
         #scroll text
 
